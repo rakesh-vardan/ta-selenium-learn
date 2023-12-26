@@ -1,0 +1,65 @@
+{
+  "id": "c32e9380-c34d-452b-bc04-3617f05fd492",
+  "version": "2.0",
+  "name": "first-project",
+  "url": "https://www.selenium.dev",
+  "tests": [{
+    "id": "085b9339-112d-485f-9d66-e581bb39b2e4",
+    "name": "first-test",
+    "commands": [{
+      "id": "7a021ece-f9b9-4332-8d0a-31f66ee0be9a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63f3bdf5-f225-4e64-8a3d-890d6f262610",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1000x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18b62326-fc61-44b6-a2a0-42c772ede72a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='main_navbar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Downloads')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "542faf5c-4465-4839-9057-2269425363e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert-heading",
+      "targets": [
+        ["css=.alert-heading", "css:finder"],
+        ["xpath=//section[@id='announcement-banner']/div/div/div/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99d11a26-b094-42da-9b20-ca77da3c12c2",
+      "comment": "",
+      "command": "assert",
+      "target": "css=.alert-heading",
+      "targets": [],
+      "value": "SeleniumConf Chicago 2023 is a wrap! Watch the Videos"
+    }]
+  }],
+  "suites": [{
+    "id": "8834e973-4a6d-40a2-ba80-d9b9da6f6ae6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["085b9339-112d-485f-9d66-e581bb39b2e4"]
+  }],
+  "urls": ["https://www.selenium.dev/"],
+  "plugins": []
+}
