@@ -1,4 +1,4 @@
-package io.learn;
+package io.learn.basic;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,5 +20,6 @@ public class FirstTest {
         System.out.println("Current page URL is: " + driver.getCurrentUrl()); //https://www.selenium.dev
 
         driver.close();
+        driver.quit();
     }
 }
