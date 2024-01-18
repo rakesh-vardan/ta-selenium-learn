@@ -39,7 +39,7 @@ Refer the below sample HTML file for the tasks, save it and open in a browser.
     - Answer://a[@href='https://assistant.google.com/']
 5. Write an XPath to select the `li` element with the class `special`.
 
-    - Answer:
+    - Answer: //li[@class='special']
 6. Write an XPath to select the second `li` item in the list.
 
     - Answer: 
