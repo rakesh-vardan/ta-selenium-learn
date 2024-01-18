@@ -42,7 +42,7 @@ Refer the below sample HTML file for the tasks, save it and open in a browser.
     - Answer: //li[@class='special']
 6. Write an XPath to select the second `li` item in the list.
 
-    - Answer: 
+    - Answer: //li[position()=2]
 7. Write an XPath to select all `li` elements which are siblings of `li` elements with class `special`.
 
     - Answer:
