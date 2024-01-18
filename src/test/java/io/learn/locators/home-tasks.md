@@ -25,7 +25,7 @@ Refer the below sample HTML file for the tasks, save it and open in a browser.
 
 1. Write an XPath to select the paragraph element with id `para1`.
   
-    - Answer: 
+    - Answer: //div/p[@id='para1']
 2. Write an XPath to select all elements with the class `item`.
 
     - Answer:
