@@ -32,10 +32,11 @@ Refer the below sample HTML file for the tasks, save it and open in a browser.
 
 3. Write an XPath to select the `li` element with contains the text `Item 1`.
 
-    - Answer:
+    - Answer: //li[contains(text(), 'Item 1')]
+    
 4. Write an XPath to select the `a` element which contains the attribute `href` with its value as "https://assistant.google.com/".
 
-    - Answer:
+    - Answer://a[@href='https://assistant.google.com/']
 5. Write an XPath to select the `li` element with the class `special`.
 
     - Answer:
