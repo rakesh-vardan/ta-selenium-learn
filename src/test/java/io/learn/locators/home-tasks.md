@@ -28,7 +28,8 @@ Refer the below sample HTML file for the tasks, save it and open in a browser.
     - Answer: //div/p[@id='para1']
 2. Write an XPath to select all elements with the class `item`.
 
-    - Answer:
+    - Answer: //li[@class='item']
+
 3. Write an XPath to select the `li` element with contains the text `Item 1`.
 
     - Answer:
