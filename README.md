@@ -14,3 +14,5 @@
 10. [Demo Store Site](https://magento.softwaretestingboard.com/) 
 11. [Guru99 Demo Banking Site](https://demo.guru99.com/V4/)
 12. [ToolsQA Demo App](https://demoqa.com/)
+
+ > _This repo contains code examples & references from other sources created by great engineers across the world._
