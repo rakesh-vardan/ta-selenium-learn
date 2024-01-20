@@ -3,10 +3,11 @@ package io.learn.locators;
 import io.learn.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class LocatorsTest2 extends BaseTest {
 
@@ -37,8 +38,8 @@ public class LocatorsTest2 extends BaseTest {
     public void testById1() {
         driver.get(URL);
         WebElement elementById = driver.findElement(By.id("my-text-id"));
-        Assert.assertEquals(elementById.getAttribute("type"), "text");
-        Assert.assertEquals(elementById.getAttribute("myprop"), "myvalue");
+        assertThat(elementById.getAttribute("type")).isEqualTo("text");
+        assertThat(elementById.getAttribute("myprop")).isEqualTo("myvalue");
     }
 
     //by name
@@ -46,8 +47,8 @@ public class LocatorsTest2 extends BaseTest {
     public void testByName() {
         driver.get(URL);
         WebElement elementByName = driver.findElement(By.name("my-text"));
-        Assert.assertEquals(elementByName.getAttribute("type"), "text");
-        Assert.assertEquals(elementByName.getAttribute("myprop"), "myvalue");
+        assertThat(elementByName.getAttribute("type")).isEqualTo("text");
+        assertThat(elementByName.getAttribute("myprop")).isEqualTo("myvalue");
     }
 
     //by link text
@@ -55,10 +56,10 @@ public class LocatorsTest2 extends BaseTest {
     public void testByLinkText() {
         driver.get(URL);
         WebElement elementByLinkText = driver.findElement(By.linkText("Return to index"));
-        Assert.assertEquals(elementByLinkText.getTagName(), "a");
+        assertThat(elementByLinkText.getTagName()).isEqualTo("a");
 
         WebElement elementByPartialLinkText = driver.findElement(By.partialLinkText("index"));
-        Assert.assertEquals(elementByPartialLinkText.getTagName(), "a");
+        assertThat(elementByPartialLinkText.getTagName()).isEqualTo("a");
     }
 
     //by class name
@@ -66,8 +67,8 @@ public class LocatorsTest2 extends BaseTest {
     public void testByClassName() {
         driver.get(URL);
         List<WebElement> elements = driver.findElements(By.className("form-control"));
-        Assert.assertEquals(elements.size(), 9);
-        Assert.assertEquals(elements.get(0).getAttribute("name"), "my-text");
+        assertThat(elements.size()).isEqualTo(9);
+        assertThat(elements.get(0).getAttribute("name")).isEqualTo("my-text");
     }
 
     //by tag name
@@ -75,7 +76,7 @@ public class LocatorsTest2 extends BaseTest {
     public void testByTagName() {
         driver.get(URL);
         WebElement elementByTagName = driver.findElement(By.tagName("textarea"));
-        Assert.assertEquals(elementByTagName.getAttribute("rows"), "3");
+        assertThat(elementByTagName.getAttribute("rows")).isEqualTo("3");
     }
 
     //by xpath
@@ -83,7 +84,7 @@ public class LocatorsTest2 extends BaseTest {
     public void testByXpath() {
         driver.get(URL);
         WebElement elementByXpath = driver.findElement(By.xpath("//input[@type='hidden']"));
-        Assert.assertFalse(elementByXpath.isDisplayed()); //false
+        assertThat(elementByXpath.isDisplayed()).isFalse(); //false
     }
 
 
@@ -92,6 +93,6 @@ public class LocatorsTest2 extends BaseTest {
     public void testByCss() {
         driver.get(URL);
         WebElement elementByCss = driver.findElement(By.cssSelector("input[type='hidden']"));
-        Assert.assertFalse(elementByCss.isDisplayed()); //false
+        assertThat(elementByCss.isDisplayed()).isFalse(); //false
     }
 }
