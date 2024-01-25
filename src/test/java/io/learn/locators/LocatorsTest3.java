@@ -2,6 +2,7 @@ package io.learn.locators;
 
 import io.learn.BaseTest;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -65,6 +66,22 @@ public class LocatorsTest3 extends BaseTest {
         assertThat(uncheckedRadioButton.isDisplayed()).isTrue();
         assertThat(uncheckedRadioButton.isSelected()).isFalse();
         uncheckedRadioButton.click();
+        assertThat(uncheckedRadioButton.isSelected()).isTrue();
+    }
+
+    @Test
+    public void testXPathLocatorAdvancedUsingJSE() {
+        driver.get(URL);
+
+        WebElement uncheckedRadioButton = driver
+                .findElement(By.xpath("//input[@type='radio' and not(@checked)]"));
+        assertThat(uncheckedRadioButton.isDisplayed()).isTrue();
+        assertThat(uncheckedRadioButton.isSelected()).isFalse();
+
+        //using JavaScriptExecutor to click on the radio button - solution to above example
+        JavascriptExecutor jse = (JavascriptExecutor) driver; //type casting in Java
+        jse.executeScript("arguments[0].click()", uncheckedRadioButton);
+
         assertThat(uncheckedRadioButton.isSelected()).isTrue();
     }
 
