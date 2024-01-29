@@ -1,4 +1,4 @@
-package io.learn.composite_actions;
+package io.learn._4_composite_actions;
 
 import io.learn.BaseTest;
 import org.apache.commons.lang3.SystemUtils;

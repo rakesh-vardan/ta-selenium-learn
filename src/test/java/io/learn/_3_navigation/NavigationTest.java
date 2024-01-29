@@ -1,4 +1,4 @@
-package io.learn.navigation;
+package io.learn._3_navigation;
 
 import io.learn.BaseTest;
 import org.testng.annotations.Test;

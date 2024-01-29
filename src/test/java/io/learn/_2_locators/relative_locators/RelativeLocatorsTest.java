@@ -1,4 +1,4 @@
-package io.learn.locators.relative_locators;
+package io.learn._2_locators.relative_locators;
 
 import io.learn.BaseTest;
 import org.openqa.selenium.By;

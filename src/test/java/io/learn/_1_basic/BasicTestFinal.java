@@ -1,4 +1,4 @@
-package io.learn.basic;
+package io.learn._1_basic;
 
 import io.learn.BaseTest;
 import org.testng.annotations.Test;

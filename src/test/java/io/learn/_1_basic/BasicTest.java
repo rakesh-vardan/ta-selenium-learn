@@ -1,4 +1,4 @@
-package io.learn.basic;
+package io.learn._1_basic;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
