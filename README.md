@@ -16,3 +16,7 @@
 12. [ToolsQA Demo App](https://demoqa.com/)
 
  > _This repo contains code examples & references from other sources created by great engineers across the world._
+ 
+## References:
+
+[Hands-on Selenium Webdriver by Boni Garcia](https://www.oreilly.com/library/view/hands-on-selenium-webdriver/9781098109998/)
